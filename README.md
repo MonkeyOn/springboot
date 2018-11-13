@@ -9,8 +9,14 @@
 
 #### 安装教程
 
-1. xxxx
-2. xxxx
+1. 服务端安装
+	
+2. 客户端安装
+	注意/data/appdatas/client.xml 的配置
+	ip:服务端ip
+	port:服务端提供
+	http-prot:接入的机器(本机上)的tomcat端口
+	<server ip="127.0.0.1" port="2280"  http-prot="8080"/>
 3. xxxx
 
 #### 使用说明
