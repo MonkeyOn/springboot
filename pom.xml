@@ -6,13 +6,36 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<!-- 设置spring boot的parent -->
 	<!-- 说明：Spring boot的项目必须要将parent设置为spring boot的parent，该parent包含了大量默认的配置，大大简化了我们的开发。 -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.2.RELEASE</version>
 	</parent>
+	
+	
+	<!-- <profiles>
+		<profile>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<repositories>
+				<repository>
+					<id>central</id>
+					<layout>default</layout>
+					<url>http://repo1.maven.org/maven2</url>
+				</repository>
+				<repository>
+					<id>unidal.nexus</id>
+					<url>http://unidal.org/nexus/content/repositories/releases/</url>
+				</repository>
+			</repositories>
+			<properties>
+				<maven.compiler.source>1.8</maven.compiler.source>
+				<maven.compiler.target>1.8</maven.compiler.target>
+			</properties>
+		</profile>
+	</profiles> -->
 
 	<!-- jdk1.7 -->
 	<build>
@@ -27,7 +50,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-	</build>
+	</build> 
 
 	<dependencies>
 
@@ -81,6 +104,11 @@
 			<version>1.0.0</version>
 		</dependency>
 
+		 <dependency>
+            <groupId>com.dianping.cat</groupId>
+            <artifactId>cat-client</artifactId>
+            <version>2.0.0</version>
+        </dependency>
 
 		<!-- <dependency>
 			<groupId>com.dianping.cat</groupId>
@@ -111,4 +139,6 @@
          <url>http://unidal.org/nexus/content/repositories/releases/</url>
       </pluginRepository>
    </pluginRepositories>
+   
+   
 </project>
