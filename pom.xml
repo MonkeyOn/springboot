@@ -14,7 +14,7 @@
 	</parent>
 	
 	
-	<!-- <profiles>
+	<profiles>
 		<profile>
 			<activation>
 				<activeByDefault>true</activeByDefault>
@@ -35,7 +35,7 @@
 				<maven.compiler.target>1.8</maven.compiler.target>
 			</properties>
 		</profile>
-	</profiles> -->
+	</profiles>
 
 	<!-- jdk1.7 -->
 	<build>
@@ -117,7 +117,7 @@
 		</dependency> -->
 	</dependencies>
 
-	<repositories>
+	<!-- <repositories>
       <repository>
          <id>central</id>
          <name>Maven2 Central Repository</name>
@@ -139,6 +139,6 @@
          <url>http://unidal.org/nexus/content/repositories/releases/</url>
       </pluginRepository>
    </pluginRepositories>
-   
+    -->
    
 </project>
