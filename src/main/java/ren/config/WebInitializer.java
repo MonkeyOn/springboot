@@ -7,14 +7,15 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration.Dynamic;
 
+import org.springframework.web.SpringServletContainerInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
-public class WebInitializer implements ServletContainerInitializer {
+public class WebInitializer extends SpringServletContainerInitializer {
 	//SpringBootServletInitializer
 	//WebApplicationInitializer
-	//ServletContainerInitializer
-	//SpringServletContainerInitializer
+	//ServletContainerInitializer: 重要的类
+	//SpringServletContainerInitializer 
 	
 //	@Override
 //	public void onStartup(ServletContext servletContext) throws ServletException {

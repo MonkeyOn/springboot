@@ -16,6 +16,7 @@ public class Config {
 	//cat过滤器
 	@Bean
 	public FilterRegistrationBean testFilterRegistration() {
+		System.out.println("************************");
 		FilterRegistrationBean registration = new FilterRegistrationBean();
         //注入过滤器
         registration.setFilter(new CatFilter());
@@ -24,7 +25,8 @@ public class Config {
         //过滤器名称
         registration.setName("cat-filter");
         //过滤器顺序 ,配置，值越大，执行顺序越靠后
-        registration.setOrder(FilterRegistrationBean.LOWEST_PRECEDENCE);
+        registration.setOrder(FilterRegistrationBean.HIGHEST_PRECEDENCE);
+//      registration.setOrder(FilterRegistrationBean.LOWEST_PRECEDENCE);
 //		registration.addInitParameter("paramName", "paramValue"); //
 		return registration;
 	}
