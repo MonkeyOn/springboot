@@ -23,7 +23,7 @@ public class UserController {
 		
 		Cat.logMetricForCount("Pay");
 		
-		Cat.logMetricForSum("Paya", amount);
+//		Cat.logMetricForSum("Paya", amount);
 		
 		t.setStatus(Transaction.SUCCESS);
 		
